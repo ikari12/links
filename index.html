@@ -178,12 +178,13 @@
   .link-arrow { color: #475569; font-size: 0.66rem; flex-shrink: 0; transition: transform 0.2s; }
   .link-card:hover .link-arrow { transform: translateX(2px); color: #cbd5e1; }
 
-  .icon-lab   { background: linear-gradient(135deg, rgba(34,197,94,0.2), rgba(34,197,94,0.1)); color: #4ade80; }
   .icon-cairn { background: linear-gradient(135deg, rgba(59,130,246,0.2), rgba(59,130,246,0.1)); color: #60a5fa; }
-  .icon-climb { background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.1)); color: #fbbf24; }
-  .icon-art1  { background: linear-gradient(135deg, rgba(14,165,233,0.2), rgba(14,165,233,0.1)); color: #38bdf8; }
-  .icon-art2  { background: linear-gradient(135deg, rgba(168,85,247,0.2), rgba(168,85,247,0.1)); color: #c084fc; }
-  .icon-art3  { background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.1)); color: #f59e0b; }
+  .icon-belay { background: linear-gradient(135deg, rgba(34,197,94,0.2), rgba(34,197,94,0.1)); color: #4ade80; }
+  .icon-sherpa { background: linear-gradient(135deg, rgba(14,165,233,0.2), rgba(14,165,233,0.1)); color: #38bdf8; }
+  .icon-paper { background: linear-gradient(135deg, rgba(148,163,184,0.25), rgba(148,163,184,0.1)); color: #e2e8f0; }
+  .icon-art1  { background: linear-gradient(135deg, rgba(168,85,247,0.2), rgba(168,85,247,0.1)); color: #c084fc; }
+  .icon-art2  { background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.1)); color: #f59e0b; }
+  .icon-art3  { background: linear-gradient(135deg, rgba(239,68,68,0.2), rgba(239,68,68,0.1)); color: #f87171; }
 
   .profile-footer {
     font-size: 0.63rem;
@@ -264,62 +265,71 @@
       </div>
     </div>
 
-    <!-- Right Column: Links (Tools & Articles) -->
+    <!-- Right Column: Products & Books -->
     <div class="right-col">
-      <div class="section-header s-tools">自作ツール</div>
+      <div class="section-header s-tools">プロダクト</div>
 
-      <a class="link-card d1" href="https://lab.ikari.io" target="_blank" rel="noopener">
-        <div class="link-icon icon-lab">🔬</div>
-        <div class="link-info">
-          <div class="link-title">Durability Monitor</div>
-          <div class="link-desc">PubMedのスポーツ科学論文をAIが毎日要約・登山者向けにQ&A</div>
-        </div>
-        <span class="link-arrow">→</span>
-      </a>
-
-      <a class="link-card d2" href="https://gpx.ikari.io" target="_blank" rel="noopener">
+      <a class="link-card d1" href="https://gpx.ikari.io/demo/dashboard" target="_blank" rel="noopener">
         <div class="link-icon icon-cairn">📊</div>
         <div class="link-info">
           <div class="link-title">CAIRN</div>
-          <div class="link-desc">GPX × 心拍データからVAM・ドリフト率・EFを算出する山行分析アプリ</div>
+          <div class="link-desc">登録不要で体験 — GPX×心拍からVAM・ドリフト・EFを可視化</div>
         </div>
         <span class="link-arrow">→</span>
       </a>
 
-      <a class="link-card d3" href="https://ikari12.github.io/climbing-form-analyzer/" target="_blank" rel="noopener">
-        <div class="link-icon icon-climb">🧗</div>
+      <a class="link-card d2" href="https://lab.ikari.io" target="_blank" rel="noopener">
+        <div class="link-icon icon-belay">🔬</div>
         <div class="link-info">
-          <div class="link-title">クライミング動画分析</div>
-          <div class="link-desc">AI骨格検出でフォーム・静止比・ピーク速度を定量解析</div>
+          <div class="link-title">BELAY</div>
+          <div class="link-desc">論文サマリー配信 — PubMedのスポーツ科学を登山者向けに要約・Q&A</div>
         </div>
         <span class="link-arrow">→</span>
       </a>
 
-      <div class="section-header s-art">記事・検証</div>
-
-      <a class="link-card d6" href="https://ballistic-oboe-760.notion.site/Durability-2-0-9-3b5cef9436a88082be0ee583335d020f" target="_blank" rel="noopener">
-        <div class="link-icon icon-art3">🧗</div>
+      <a class="link-card d3" href="https://gpx.ikari.io/demo/sherpa" target="_blank" rel="noopener">
+        <div class="link-icon icon-sherpa">🗺️</div>
         <div class="link-info">
-          <div class="link-title">Durability 2.0</div>
-          <div class="link-desc">限界と疲労を科学で解剖する9つのハック — 下り膝・RFD・暑熱・120g/h糖質・高尾山4往復実証</div>
+          <div class="link-title">SHERPA</div>
+          <div class="link-desc">登録不要で体験 — リアルタイム音声ガイド＆トラッカー</div>
         </div>
         <span class="link-arrow">→</span>
       </a>
 
-      <a class="link-card d4" href="https://shorturl.at/Gtfty" target="_blank" rel="noopener">
+      <div class="section-header s-art">書籍・論文</div>
+
+      <a class="link-card d4" href="https://github.com/ikari12/GRAD" target="_blank" rel="noopener">
+        <div class="link-icon icon-paper">📄</div>
+        <div class="link-info">
+          <div class="link-title">発表した論文</div>
+          <div class="link-desc">GRAD — 25.3万件の心肺デカップリング分析（SportRxiv / GitHub）</div>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <a class="link-card d5" href="https://gpx.ikari.io/guide/durability/00_prologue" target="_blank" rel="noopener">
         <div class="link-icon icon-art1">📝</div>
         <div class="link-info">
-          <div class="link-title">Durabilityの科学</div>
-          <div class="link-desc">後半の失速を防ぐ「第4の次元」— Meixner (2025) の4概念を実走検証</div>
+          <div class="link-title">心拍で壊れない身体をつくる</div>
+          <div class="link-desc">『脈拍と標高』— N=1で心拍ドリフトとCGMを検証した基礎シリーズ</div>
         </div>
         <span class="link-arrow">→</span>
       </a>
 
-      <a class="link-card d5" href="https://shorturl.at/6qjBV" target="_blank" rel="noopener">
+      <a class="link-card d6" href="https://gpx.ikari.io/guide/durability_science/01_stamina_myth" target="_blank" rel="noopener">
         <div class="link-icon icon-art2">📝</div>
         <div class="link-info">
-          <div class="link-title">脈拍と標高</div>
-          <div class="link-desc">N=1で解き明かす壊れない身体の作り方 — 心拍ドリフトとCGM検証</div>
+          <div class="link-title">後半にバテない科学</div>
+          <div class="link-desc">『Durabilityの科学』— 失速を防ぐ「第4の次元」を実走で検証</div>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <a class="link-card d7" href="https://ballistic-oboe-760.notion.site/Durability-2-0-9-3b5cef9436a88082be0ee583335d020f" target="_blank" rel="noopener">
+        <div class="link-icon icon-art3">📝</div>
+        <div class="link-info">
+          <div class="link-title">限界と疲労の9つのハック</div>
+          <div class="link-desc">『Durability 2.0』— 下り膝・RFD・暑熱・糖質・高尾4往復の実践編</div>
         </div>
         <span class="link-arrow">→</span>
       </a>
