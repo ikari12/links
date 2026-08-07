@@ -38,14 +38,14 @@
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 36px 24px;
   }
 
   /* 2-Column Dashboard Layout */
   .dashboard {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 20px;
+    gap: 28px;
     align-items: start;
   }
 
@@ -53,13 +53,13 @@
   .left-col {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 18px;
   }
 
   /* Profile Card (Left Column) */
   .profile-card {
-    padding: 18px;
-    border-radius: 16px;
+    padding: 28px;
+    border-radius: 18px;
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(255,255,255,0.06);
     backdrop-filter: blur(12px);
@@ -68,10 +68,10 @@
   }
 
   .avatar {
-    width: 64px; height: 64px; border-radius: 50%;
+    width: 88px; height: 88px; border-radius: 50%;
     background: linear-gradient(135deg, #6366f1, #22c55e);
     display: inline-flex; align-items: center; justify-content: center;
-    font-size: 2rem; margin-bottom: 10px;
+    font-size: 2.6rem; margin-bottom: 16px;
     box-shadow: 0 0 28px rgba(99,102,241,0.25);
     animation: pulse 4s ease-in-out infinite;
   }
@@ -80,15 +80,15 @@
     50% { box-shadow: 0 0 44px rgba(99,102,241,0.45); }
   }
 
-  .profile-card h1 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
-  .profile-card .tagline { font-size: 0.92rem; color: #cbd5e1; line-height: 1.5; }
+  .profile-card h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+  .profile-card .tagline { font-size: 1.12rem; color: #cbd5e1; line-height: 1.6; }
 
   .tags {
-    display: flex; flex-wrap: wrap; gap: 4px;
-    justify-content: center; margin-top: 10px;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    justify-content: center; margin-top: 16px;
   }
   .tag {
-    font-size: 0.78rem; font-weight: 600; padding: 3px 10px;
+    font-size: 0.86rem; font-weight: 600; padding: 5px 12px;
     border-radius: 100px; background: rgba(255,255,255,0.06);
     color: #cbd5e1; border: 1px solid rgba(255,255,255,0.08);
   }
@@ -97,25 +97,25 @@
   .left-panels {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 18px;
   }
 
   .panel {
-    padding: 14px; border-radius: 12px;
+    padding: 20px; border-radius: 16px;
     background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
     backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
   }
   .panel h3 {
-    font-size: 0.92rem; font-weight: 700; margin-bottom: 8px;
+    font-size: 1.08rem; font-weight: 700; margin-bottom: 14px;
     display: flex; align-items: center; gap: 6px;
   }
   .panel-goals h3 { color: #f59e0b; }
   .panel-targets h3 { color: #818cf8; }
 
   /* Goals */
-  .goal-row { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+  .goal-row { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
   .goal-row:last-child { margin-bottom: 0; }
-  .goal-text { font-size: 0.82rem; color: #cbd5e1; flex: 1; line-height: 1.3; }
+  .goal-text { font-size: 0.96rem; color: #cbd5e1; flex: 1; line-height: 1.45; }
   .goal-bar-wrap {
     width: 50px; height: 4px; background: rgba(255,255,255,0.08);
     border-radius: 2px; overflow: hidden; flex-shrink: 0;
@@ -129,8 +129,8 @@
   /* Targets */
   .target-list { list-style: none; }
   .target-list li {
-    font-size: 0.82rem; color: #cbd5e1; padding: 2px 0;
-    display: flex; align-items: baseline; gap: 6px; line-height: 1.35;
+    font-size: 0.96rem; color: #cbd5e1; padding: 4px 0;
+    display: flex; align-items: baseline; gap: 8px; line-height: 1.5;
   }
   .target-list .done { color: #4ade80; flex-shrink: 0; }
   .target-list .next { color: #fbbf24; flex-shrink: 0; }
@@ -143,12 +143,12 @@
 
   /* Section divider */
   .section-header {
-    display: flex; align-items: center; gap: 8px;
-    margin: 0 0 6px; font-size: 0.78rem; font-weight: 700;
+    display: flex; align-items: center; gap: 10px;
+    margin: 0 0 14px; font-size: 0.98rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.1em; color: #64748b;
   }
   .right-col .section-header:not(:first-child) {
-    margin-top: 12px;
+    margin-top: 28px;
   }
   .section-header::after {
     content: ''; flex: 1; height: 1px;
@@ -157,8 +157,8 @@
 
   /* Link cards */
   .link-card {
-    display: flex; align-items: center; gap: 10px;
-    padding: 8px 12px; margin-bottom: 5px; border-radius: 10px;
+    display: flex; align-items: center; gap: 18px;
+    padding: 16px 20px; margin-bottom: 10px; border-radius: 14px;
     background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06);
     backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
     text-decoration: none; color: #f8fafc;
@@ -170,14 +170,14 @@
   }
 
   .link-icon {
-    width: 32px; height: 32px; border-radius: 8px;
+    width: 48px; height: 48px; border-radius: 12px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 1rem; flex-shrink: 0;
+    font-size: 1.45rem; flex-shrink: 0;
   }
   .link-info { flex: 1; min-width: 0; }
-  .link-title { font-size: 0.88rem; font-weight: 700; line-height: 1.2; }
-  .link-desc { font-size: 0.72rem; color: #94a3b8; line-height: 1.35; margin-top: 1px; }
-  .link-arrow { color: #475569; font-size: 0.9rem; flex-shrink: 0; transition: transform 0.2s; }
+  .link-title { font-size: 1.2rem; font-weight: 700; line-height: 1.3; }
+  .link-desc { font-size: 0.98rem; color: #94a3b8; line-height: 1.55; margin-top: 4px; }
+  .link-arrow { color: #475569; font-size: 1.1rem; flex-shrink: 0; transition: transform 0.2s; }
   .link-card:hover .link-arrow { transform: translateX(3px); color: #cbd5e1; }
 
   .icon-lab   { background: linear-gradient(135deg, rgba(34,197,94,0.2), rgba(34,197,94,0.1)); color: #4ade80; }
@@ -185,11 +185,12 @@
   .icon-climb { background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.1)); color: #fbbf24; }
   .icon-art1  { background: linear-gradient(135deg, rgba(14,165,233,0.2), rgba(14,165,233,0.1)); color: #38bdf8; }
   .icon-art2  { background: linear-gradient(135deg, rgba(168,85,247,0.2), rgba(168,85,247,0.1)); color: #c084fc; }
+  .icon-art3  { background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.1)); color: #f59e0b; }
 
   .profile-footer {
-    font-size: 0.88rem;
-    margin-top: 10px;
-    color: #38bdf8;
+    font-size: 1.05rem;
+    margin-top: 16px;
+    color: #38bdf8; /* 水色（スカイブルー） */
   }
 
   /* Responsive styling: stack on mobile */
@@ -248,7 +249,7 @@
             <div class="goal-bar-wrap"><div class="goal-bar bar-zone4"></div></div>
           </div>
           <div class="goal-row">
-            <span class="goal-text">鎖場 +20bpm内</span>
+            <span class="goal-text">鎖場HR +20bpm内</span>
             <div class="goal-bar-wrap"><div class="goal-bar bar-chain"></div></div>
           </div>
         </div>
@@ -260,7 +261,7 @@
             <li><span class="next">⚡</span> 剱岳リベンジ</li>
             <li><span class="next">🔜</span> 前穂→北穂→奥穂</li>
             <li><span class="next">🔜</span> 谷川 西黒尾根</li>
-            <li><span class="next">❄️</span> 冬季赤岳（定点）</li>
+            <li><span class="next">❄️</span> 冬季赤岳</li>
           </ul>
         </div>
       </div>
@@ -268,9 +269,18 @@
 
     <!-- Right Column: Links (Tools & Articles) -->
     <div class="right-col">
-      <div class="section-header s-tools">プロダクト</div>
+      <div class="section-header s-tools">自作ツール</div>
 
-      <a class="link-card d1" href="https://gpx.ikari.io" target="_blank" rel="noopener">
+      <a class="link-card d1" href="https://lab.ikari.io" target="_blank" rel="noopener">
+        <div class="link-icon icon-lab">🔬</div>
+        <div class="link-info">
+          <div class="link-title">Durability Monitor</div>
+          <div class="link-desc">PubMedのスポーツ科学論文をAIが毎日要約・登山者向けにQ&A</div>
+        </div>
+        <span class="link-arrow">→</span>
+      </a>
+
+      <a class="link-card d2" href="https://gpx.ikari.io" target="_blank" rel="noopener">
         <div class="link-icon icon-cairn">📊</div>
         <div class="link-info">
           <div class="link-title">CAIRN</div>
@@ -279,37 +289,28 @@
         <span class="link-arrow">→</span>
       </a>
 
-      <a class="link-card d2" href="https://lab.ikari.io" target="_blank" rel="noopener">
-        <div class="link-icon icon-lab">📚</div>
+      <a class="link-card d3" href="https://ikari12.github.io/climbing-form-analyzer/" target="_blank" rel="noopener">
+        <div class="link-icon icon-climb">🧗</div>
         <div class="link-info">
-          <div class="link-title">BELAY</div>
-          <div class="link-desc">PubMedのスポーツ科学論文をAIが毎日要約・登山者向けにQ&amp;A</div>
+          <div class="link-title">クライミング動画分析</div>
+          <div class="link-desc">AI骨格検出でフォーム・静止比・ピーク速度を定量解析</div>
         </div>
         <span class="link-arrow">→</span>
       </a>
 
-      <a class="link-card d3" href="https://gpx.ikari.io/tracker/" target="_blank" rel="noopener">
-        <div class="link-icon icon-climb">🗺️</div>
+      <div class="section-header s-art">記事・検証</div>
+
+      <a class="link-card d6" href="https://www.notion.so/3b5cef9436a88082be0ee583335d020f" target="_blank" rel="noopener">
+        <div class="link-icon icon-art3">🧗</div>
         <div class="link-info">
-          <div class="link-title">SHERPA</div>
-          <div class="link-desc">リアルタイム音声ガイド付き登山トラッカー — 体力・膝負荷を信号機表示</div>
+          <div class="link-title">Durability 2.0</div>
+          <div class="link-desc">限界と疲労を科学で解剖する9つのハック — 下り膝・RFD・暑熱・120g/h糖質・高尾山4往復実証</div>
         </div>
         <span class="link-arrow">→</span>
       </a>
 
-      <div class="section-header s-art">論文・記事</div>
-
-      <a class="link-card d4" href="https://github.com/ikari12/GRAD/blob/main/paper/Route_Correction_and_Variance_Decomposition_for_Aerobic_Decoupling__A_253K_Workout_Study_of_Durability_Dimensionality.pdf" target="_blank" rel="noopener">
-        <div class="link-icon icon-art1">📄</div>
-        <div class="link-info">
-          <div class="link-title">GRAD — Durability次元分解</div>
-          <div class="link-desc">253Kワークアウトからルート補正と分散分解で有酸素デカップリングの次元を解明</div>
-        </div>
-        <span class="link-arrow">→</span>
-      </a>
-
-      <a class="link-card d5" href="https://shorturl.at/Gtfty" target="_blank" rel="noopener">
-        <div class="link-icon icon-art2">📝</div>
+      <a class="link-card d4" href="https://shorturl.at/Gtfty" target="_blank" rel="noopener">
+        <div class="link-icon icon-art1">📝</div>
         <div class="link-info">
           <div class="link-title">Durabilityの科学</div>
           <div class="link-desc">後半の失速を防ぐ「第4の次元」— Meixner (2025) の4概念を実走検証</div>
